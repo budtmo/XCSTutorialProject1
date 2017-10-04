@@ -28,9 +28,9 @@ class XCSTutorialProject1Tests: XCTestCase {
     
     func testPerformanceExample() {
         // This is an example of a performance test case.
-        self.measureBlock {
+        self.measure {
             // Put the code you want to measure the time of here.
-            NSThread.sleepForTimeInterval(0.1)
+            Thread.sleep(forTimeInterval: 0.1)
         }
     }
     
