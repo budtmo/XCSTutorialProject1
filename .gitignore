@@ -31,3 +31,9 @@ DerivedData
 # Carthage/Checkouts
 
 Carthage/Build
+
+# Test result
+report-junit.xml
+
+# Test coverage
+cobertura.xml
