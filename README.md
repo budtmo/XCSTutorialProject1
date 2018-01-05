@@ -67,7 +67,39 @@ Publish test result in Jenkins
 How to zip to .ipa file
 -----------------------
 
-[zip tutorial]
+1. Open the project in Xcode
+
+	```
+	open XCSTutorialProject1.xcodeproj
+	```
+	
+2. Rename Bundle Identifier in Identity section
+
+3. Select team in Signing section. (If there is no Apple ID stored there, log in with your Apple ID)
+
+4. Select Product -> Build For -> Running
+
+5. Go to build directory
+
+6. Create a new directory named "Payload"
+	
+	```
+	mkdir Payload
+	```
+
+7. Move app folder into "Payload"
+
+	```
+	cp -r sample.app Payload
+	```
+	
+8. Zip the "Payload" into .ipa 
+
+	```
+	zip -r final_app.ipa Payload/
+	```
+	
+Source: [zip tutorial]
 	
 [IDE]: <images/how_to_run.png>
 [xcpretty]: <https://github.com/supermarin/xcpretty>
